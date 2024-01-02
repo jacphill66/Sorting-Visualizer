@@ -14,8 +14,9 @@
 <body class = "body">
 	<div id = "Title-Bar" class = "title-bar">
 			<div id="Title-Bar-Buttons">
-				<Button onclick="slideSideBar()"> Side-Bar </Button> 
-				
+				<a onclick="slideSideBar()">
+					<image id = "Ham-Button" src = "svgs\ham.svg">
+				</a>					
 			</div>
 			<div id="Title-Bar-Titles">
 				<h1 id = "Main-Title" > Sorting Visualizer </h1>
@@ -26,92 +27,80 @@
 			<div id = "Nav-Side-Bar">
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-1">
 					<a onclick="sortOnID(5, false, 1)">
-						Comparison
-					</a>
-				</div>
-				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-1">
-					<a onclick="sortOnID(5, false, 1)">
-						Non-Comparison
-					</a>
-				</div>
-				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-1">
-					<a onclick="sortOnID(5, false, 1)">
-						Logarithmic
-					</a>
-				</div>
-				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-1">
-					<a onclick="sortOnID(5, false, 1)">
-						Quadratic
-					</a>
-				</div>
-				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-1">
-					<a onclick="sortOnID(5, false, 1)">
-						Other
-					</a>
-				</div>
-				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-1">
-					<a onclick="sortOnID(5, false, 1)">
 						<image id = "Nav-Bar-Icon" src = "svgs\merge_sort.svg">
+							<text id = "Sort-Label"> Merge Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-2">
 					<a onclick="sortOnID(6, false, 2)">
 						<image id = "Nav-Bar-Icon" src = "svgs\bubble_sort.svg">
+							<text id = "Sort-Label"> Bubble Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-3">
 					<a onclick="sortOnID(7, false, 3)">
 						<image id = "Nav-Bar-Icon" src = "svgs\selection_sort.svg">
+							<text id = "Sort-Label"> Selection Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-4">
 					<a onclick="sortOnID(8, false, 4)">
 						<image id = "Nav-Bar-Icon" src = "svgs\tree_sort.svg">
+							<text id = "Sort-Label"> Tree Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-5">
 					<a onclick="sortOnID(9, false, 5)" > 
 						<image id = "Nav-Bar-Icon" src = "svgs\pancake_sort.svg">
+							<text id = "Sort-Label"> Pancake Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-6">
 					<a onclick="sortOnID(10, false, 6)">
 						<image id = "Nav-Bar-Icon" src = "svgs\heap_sort.svg">
+							<text id = "Sort-Label"> Heap Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-7">
 					<a onclick="sortOnID(11, false, 7)">
 						<image id = "Nav-Bar-Icon" src = "svgs\gnome_sort.svg">
+							<text id = "Sort-Label"> Gnome Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-8">
 					<a onclick="sortOnID(12, false, 8)">
 						<image id = "Nav-Bar-Icon" src = "svgs\bingo_sort.svg">
+							<text id = "Sort-Label"> Bingo Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-9">
 					<a onclick="sortOnID(13, false, 9)">
 						<image id = "Nav-Bar-Icon" src = "svgs\comb_sort.svg">
+							<text id = "Sort-Label"> Comb Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-10">
 					<a onclick="sortOnID(14, false, 10)">
 						<image id = "Nav-Bar-Icon" src = "svgs\counting_sort.svg">
+						<text id = "Sort-Label"> Counting Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-11">
 					<a onclick="sortOnID(15, false, 11)">
 						<image id = "Nav-Bar-Icon" src = "svgs\counting_sort_in_place.svg">
+							<text id = "Sort-Label"> Counting Sort (in-place) </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-12">
 					<a onclick="sortOnID(17, false, 12)">
 						<image id = "Nav-Bar-Icon" src = "svgs\insertion_sort.svg">
+							<text id = "Sort-Label"> Insertion Sort </text>
 					</a>
 				</div>
 				<div class="Nav-Side-Bar-Element" id="Nav-Side-Bar-Element-13">
 				<a onclick="sortOnID(18, false, 13)">
 					<image id = "Nav-Bar-Icon" src = "svgs\quick_sort.svg">
+						<text id = "Sort-Label"> Quick Sort </text>
 				</a>
 			</div>
 			</div> 
@@ -119,17 +108,11 @@
 				<svg id = "count-arr" viewBox="0 0 10000 500"> </svg>
 				<div id = "Array-1-Holder">
 					<div id = "Array-1-Spacer-1"></div>
-					<div id = "array-1">
-						<svg class = "svg-text-array" id = "top-svg-text-array" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"></svg>
-					</div>
+					<div id = "array-1"></div>
+					<div id = "array-1"></div>
 					<div id = "Array-1-Spacer-2"></div>
 				</div>
-				<div id = "bottom-stuff">
-					<div  id = "Bottom-Spacer-LHS"></div>
-					<svg class = "svg-text-array" id = "bottom-svg-text-array" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"></svg>
-					<svg id = "svg-tree" viewBox="-4200 -750 12000 2048"> </svg>
-					<div id = "Bottom-Spacer-RHS"></div>
-				</div>
+				<svg id = "svg-tree" viewBox="-4200 -750 12000 2048"> </svg>
 			</div>
 	</div>
 
